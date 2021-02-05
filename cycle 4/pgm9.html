@@ -1,0 +1,43 @@
+<html>
+<head>
+  <script>
+    function string() {
+     
+       
+       var x =document.getElementById("input").value;
+
+      var y=x.slice(0,2);
+      
+       var val=(y==="Py"||y==="py"||y==="PY")? x:"Py"+x;
+
+
+       var k =document.getElementById("demo");
+       k.innerHTML="New String is:"+" "+val;
+       
+      }
+
+
+</script>
+  <style>
+    #box{
+         width:400px;
+         height:200px;
+         border:3px solid black;
+         background-image: linear-gradient(red, yellow);
+
+    }
+    h1{
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+<div id="box">
+<h1>Py finder</h1>
+
+  <label for="input">Enter the word! </label><input type="text" id="input">
+  <button onclick="string()">click me!</button>
+  <p id="demo"></p>
+</div>  
+</body>
+</html>

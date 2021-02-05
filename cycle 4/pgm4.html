@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <style>
+            #box{
+            width:400px;
+            height:200px;
+            border:2px solid black;
+            background-color:yellow;
+            position:relative;
+            margin:50px 50px;
+            }
+            h1{
+            text-align: center;
+            text-decoration: underline;
+            } 
+        </style>
+        <script>
+            function armstr(){
+            var number = document.getElementById("input").value;
+            var numberOfDigits = number.length;
+            var sum = 0;
+
+            for (i = 0; i < numberOfDigits; i++) {
+            sum = sum + Math.pow(number.charAt(i),numberOfDigits);
+            }
+            
+            if (sum == number) {
+            document.getElementById("demo").innerHTML = "The number: " + number + " is Armstrong Number";
+            
+            } else {
+            document.getElementById("demo").innerHTML = "The number: " + number + " is  not an Armstrong Number";
+            }
+            }
+        </script>
+    </head>
+    <body>
+        <div id="box">
+            <h1>Amstrong Number</h1>
+            Enter any Number: <input id="input">
+            <button onclick="armstr()">Check</button></br></br>
+            <p id="demo" ></p>
+        </div>
+    </body>
+</html>

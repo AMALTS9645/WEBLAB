@@ -1,0 +1,68 @@
+<html>
+    <style>
+        h1{
+            text-align: center;
+            text-decoration: underline;
+            font-size: 30px;
+        }
+        .box{
+            
+         width:400px;
+         height:300px;
+         border:2px solid blue;
+         background-color:white;
+         position:relative;
+         margin:50px 50px;
+            
+        }
+        .box2{
+        position:absolute;
+         padding-top:25px;
+         padding-left:20px;
+        }
+        .box3{
+            position:absolute;
+            padding:70px 20px;
+        }
+        label{
+            font-size: large;
+        }
+        p{
+            font-size: large;
+        }
+
+    </style>
+	<title>reverse</title>
+    <script>
+        function rev(){
+        var digit, result = 0
+        var n=document.getElementById("no_input").value;
+        while( n>0 ){
+            digit = n % 10                  
+            result = (result * 10) + digit 
+            n = n/10|0                      
+        }  
+    
+        
+        document.getElementById("demo").innerHTML =
+        "Reversed number is:"+" "+result; 
+        }
+
+
+
+    </script>
+    <body>
+        <div class="box">
+            <h1>Reverse A Number</h1>
+            <div class="box2">
+            <label>Enter the number:</label><input type="text" id="no_input" >
+            <button onclick="rev()" >REVERSE</button>
+            </div> 	
+
+            <div class="box3">
+                <p id="demo"></p>
+            </div>
+        </div>    
+    </body>
+
+</html>

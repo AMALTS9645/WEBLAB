@@ -1,0 +1,42 @@
+<html>
+    <style>
+        #box{
+         width:400px;
+         height:300px;
+         border:2px solid black;
+         background-color: tomato;
+         margin:50px 50px;
+        }
+        h1{
+            text-align: center;
+            text-decoration: underline;
+            font-size: 30px;
+        }
+        #button{
+            font-size: 20px;
+            margin-left: 50px;
+        }
+        p{
+            font-size: 20px;
+            margin-left: 50px;
+        }
+    </style>
+    <script>
+        function date(){
+        var d = new Date();
+        document.getElementById("demo").innerHTML = d.toDateString();
+        }
+    
+    </script>
+
+    <body>
+        <div id="box">
+            <h1>Click the button to know the current date</h1>
+
+            <button onclick="date()" id="button">Click Me!</button>
+
+            <p id="demo"></p>
+        </div>
+
+    </body>
+</html>

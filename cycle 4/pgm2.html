@@ -1,0 +1,105 @@
+<html>
+    <head>
+        <style>
+             #main{
+                
+                margin-left: 100px;
+            }
+            table,th{
+                background-color:black;
+                width: 400px;
+                height: 370px;
+                border: 2px solid blue;
+            }
+            
+            h1{
+                text-align: center;
+                color: rgb(243, 24, 9);
+                text-decoration: underline;
+                
+           }
+            
+            p{
+                color: white ;
+                font-size: larger;
+            }
+     </style>
+        
+        <title>CALCULATOR</title>
+        
+        
+        <script>
+            
+            function calc()
+            {
+                var n1 = (document.getElementById('n1').value);
+                var n2 = (document.getElementById('n2').value);
+                
+                var oper = document.getElementById('operators').value;
+                
+                if(oper === '+')
+                {
+                    document.getElementById('result').value = +n1 + +n2;
+                }
+                
+                if(oper === '-')
+                {
+                    document.getElementById('result').value = n1-n2;
+                }
+                
+                if(oper === '/')
+                {
+                    document.getElementById('result').value = n1/n2;
+                }
+                
+                if(oper === 'X')
+                {
+                    document.getElementById('result').value = n1*n2;
+                }
+            }
+            
+        </script>
+        
+    </head>
+
+    <body id="main">
+       
+        <table class="table">
+            
+            <tr>
+            <td colspan="2" ><h1>CALCULATOR</h1></td>
+            </tr>
+                
+            <tr>
+                <td>
+                    <p>Enter the First Number</p>
+                    <input type="text" id="n1"/>
+                </td>
+                <tr> 
+                    <td>
+                        <p>Enter the Second Number</p>
+                        <input type="text" id="n2"/>
+                    </td>
+                </tr> 
+            <tr>
+                <td>
+                    <p>Select the operation</p>
+                    <select id="operators">
+                        <option value="+">+</option>
+                        <option value="-">-</option>
+                        <option value="X">X</option>
+                        <option value="/">/</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>Answer</p>
+                    <button onclick="calc();">=</button>
+                    <input type="text" id="result"/>
+                </td>
+            </tr>
+        </table>
+    </body>
+
+</html>   

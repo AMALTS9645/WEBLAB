@@ -1,0 +1,56 @@
+<html>
+    <style>
+        #box{
+            
+            width:400px;
+            height:250px;
+            border:2px solid black;
+            background-color:#b4f00e;
+            position:relative;
+            margin: 40px;
+        }
+        #box2{
+        position:absolute;
+         padding-top:25px;
+         padding-left:20px;
+         font-size: 15px;
+         
+        }
+        #box3{
+        position:absolute;
+         padding-top:15px;
+         padding-left:20px;
+         font-size: 10px;
+        }
+        
+    </style>
+    <script>
+        function isPositive() {
+        var num =document.getElementById("no_input").value;
+        var result;
+        
+        if (num > 0) {
+            result = true;
+            document.getElementById("demo").innerHTML = "The number is positive";
+        } else if (num < 0) {
+            result = false;
+            document.getElementById("demo").innerHTML = "The number is negative";
+        }
+        
+        }
+        </script>
+    <body>
+        <div id="box">
+            <div id="box2">
+                <h1>Ckeck the given number is positive or negative</h1>
+                <label>Enter the number:</label><input type="text" id="no_input" >
+            <button onclick="isPositive()" >Check</button>
+            <div class="box3">
+                <p id="demo"></p>
+            </div>
+            </div>
+        </div>
+        
+        
+    </body>        
+</html>

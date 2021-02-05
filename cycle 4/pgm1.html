@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<body>
+Type something: <input type="text" id="input" value="">
+<br><br>
+<input type ="button" onclick="read()" value="Click here" >
+<p id="demo"></p>
+<script>
+function read() {
+  var x = document.getElementById("input").value;
+document.getElementById("demo").innerHTML = x;
+}
+</script>
+</body>
+</html>
