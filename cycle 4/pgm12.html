@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <style>
+            #box{
+                height: 200px;
+                width: 300px;
+                border: 2px solid black;
+                background-image: linear-gradient(green, lightblue);
+                margin:50px 50px ;
+            }
+            #box2{
+                text-align: center;
+            }
+        </style>
+        <script>
+            function age(){
+                var name = prompt("Enter your first name");
+                var byear = prompt("Enter your Birth year")
+                var d = new Date();
+                var c = d.getFullYear();    
+                var b = c-byear;
+                document.getElementById("demo").innerHTML =name + " is " + b + " year old" ;
+            }
+        </script>
+    </head>
+    <body>
+        <div id="box">
+            <h1>Click below for the prompt!!</h1>
+            <div id="box2">
+                <button onclick="age()">Click me!</button>
+                <p id="demo"></p>
+            </div>
+            
+        </div>
+        
+    </body>
+</html>
