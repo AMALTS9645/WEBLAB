@@ -1,0 +1,115 @@
+<html>
+<head>
+	<script>
+		function len()
+		{
+			var t=prompt("Enter the string","stringname")
+			var l=t.length;
+			document.write(l);
+		}
+		function find()
+		{
+			var list="please enter the string to find the string";
+			var loca=list.indexOf("string");
+			document.write(loca);
+		}
+		function last()
+		{
+			var list="please enter the string to find the string";
+			var loca=list.lastIndexOf("string");
+			document.write(loca);	
+		}
+		function search()
+		{
+			var list="please enter the string to find the string";
+			var loca=list.search("string");
+			document.write(loca);
+		}
+		function slice()
+		{
+			var list="car,bike,train";
+			var sl=list.slice(4, 8);
+			document.write(sl);
+		}
+		function concat()
+		{
+			var list1="hello";
+			var list2="world";
+			var res=list1.concat(list2);
+			document.write(res);
+		}
+		function replace()
+		{
+			var list="please update the form";
+			document.write(list);
+			var list1=list.replace("update","replace");
+			document.write(list1);
+		}
+		function round()
+		{
+			var m=Math.round(5.5);
+			document.write(m);
+		}
+		function power()
+		{
+			var p=Math.pow(9,2);
+			document.write(p);
+		}
+		function square()
+		{
+			var s=Math.sqrt(100);
+			document.write(s);
+		}
+		function positive()
+		{
+			var po=Math.abs(-3.6);
+			document.write(po);
+		}
+		function floor()
+		{
+			var f=Math.floor(5.6);
+			document.write(f);
+		}
+		function max()
+		{
+			var list=(0,100,20,-40,-55,2);
+			document.write(list);
+			var m1=Math.max(list);
+			document.write(m1);
+			var m2=Math.min(list);
+			document.write(m2);
+		}
+	</script>
+</head>
+<body>
+<h2><u>Strings</u></h2>	
+<p>Length of the string:</p>
+<button onclick="len()">length</button>
+<p>Find string from the front:</p>
+<button onclick="find()">find</button>
+<p>Find string from the last:</p>
+<button onclick="last()">findlast</button>
+<p>Search a string:</p>
+<button onclick="search()">search</button>
+<p>slice a string:</p>
+<button onclick="slice()">slice</button>
+<p>concatente two string:</p>
+<button onclick="concat()">concat</button>
+<p>replace a string:</p>
+<button onclick="replace()">replace</button>
+<h2><u>Math Object</u></h2>
+<p>round the number:</p>
+<button onclick="round()">round</button>
+<p>power of the number:</p>
+<button onclick="power()">power</button>
+<p>square of the number:</p>
+<button onclick="square()">square</button>
+<p>return positive value:</p>
+<button onclick="positive()">positive</button>
+<p>round down to the nearest integer:</p>
+<button onclick="floor()">floor</button>
+<p>Maximum and minimum value:</p>
+<button onclick="max()">maximum</button>
+<button onclick="min()">minimum</button>
+</body>
+</html>
