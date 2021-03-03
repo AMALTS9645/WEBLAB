@@ -25,6 +25,14 @@ else
 {
 	echo "error:" .$sql . "<br>" . mysqli_error($conn);
 }
+$sqlu = "UPDATE STUDENT SET Name='ALEN' WHERE id=4";
+
+if (mysqli_query($conn, $sqlu)) {
+  echo "Record updated successfully";
+} else {
+  echo "Error updating record: " . mysqli_error($conn);
+}
+mysqli_close($conn);
 ?>
 </body>
 </html>
