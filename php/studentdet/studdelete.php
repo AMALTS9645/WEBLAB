@@ -31,7 +31,7 @@ $r=mysqli_fetch_array($res);
 </table>
 </form>
 <?php
-if($conn)
+if(isset($_POST["delete"]))
 {
 $id=$_POST["id"];
 $qry1="delete from studentdet where id='$id'";
