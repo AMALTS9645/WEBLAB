@@ -51,8 +51,8 @@ $res=mysqli_fetch_array($data);
 <tr>
 <td><?php echo $res['id'];?></td>
 <td><?php echo $res['name'];?></td>
-<td><a href="update.php?id=<?php echo $res['id'];?>">update</a></td>
-<td><a href="delete.php?id=<?php echo $res['id'];?>">Delete</a></td>
+<td><a href="studupdate.php?id=<?php echo $res['id'];?>">update</a></td>
+<td><a href="studdelete.php?id=<?php echo $res['id'];?>">Delete</a></td>
 </tr>
 </table>
 <?php
