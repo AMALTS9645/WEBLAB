@@ -1,0 +1,26 @@
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+Enter first number:<input type="text" id="myText1" ><br>
+Enter second number:<input type="text" id="myText2" ><br>
+<button onclick="multiply()">Multiply</button>
+<button onclick="divide()">Divide</button>
+<p id="b"></p>
+<script>
+function multiply() {
+   var a = document.getElementById("myText1").value;
+   var t = document.getElementById("myText2").value;
+   var d = a * t;
+   document.getElementById("b").innerHTML = d;
+}
+function divide() {
+   var a = document.getElementById("myText1").value;
+   var t = document.getElementById("myText2").value;
+   var s = a / t;
+   document.getElementById("b").innerHTML = s;
+}
+</script>
+</body>
+</html>
